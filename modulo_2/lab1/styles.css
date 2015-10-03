@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 body{
   color: #333;
   font-family: Arial, "Monaco", sans-serif;
@@ -60,6 +61,29 @@ body{
 #container header p{
   color: blue;
     font-size: 2em;
+    margin: 1em;
+  }
+
+}
+@media screen and (max-width: 320px){
+  #container header{
+    font-family: "Oswald";
+    background: #DDD;
+    border-bottom: 1px solid; 
+    padding: 8px;
+    text-align: center;
+  }
+
+  #container header h1{
+    font-size: 2em;
+    margin: 1px;
+    color: green;
+
+  }
+
+#container header p{
+  color: yellow;
+    font-size: 1em;
     margin: 1em;
   }
 
