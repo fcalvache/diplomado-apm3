@@ -1,0 +1,21 @@
+body{
+  background-color:white;
+  color: #1162ac;
+  padding: 8px;
+}
+#titulo{
+  background-color:#A3C2FF;
+	color: chocolate;
+	font-family: helvetica;
+	font-size: 20px;
+	text-shadow: 2px 4px 6px #1162ac;
+	border: 2px inset grey;
+  padding: 8px;
+}
+#sticker{
+   width:400px;
+   height:15px;
+   border:3px solid brown;
+   border-radius:17px;
+   padding: 8px;
+}
