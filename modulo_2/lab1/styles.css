@@ -1,21 +1,66 @@
 body{
-  background-color:white;
-  color: #1162ac;
-  padding: 8px;
+  color: #333;
+  font-family: Arial, "Monaco", sans-serif;
+  font-size: 16px;
 }
-#titulo{
-  background-color:#A3C2FF;
-	color: chocolate;
-	font-family: helvetica;
-	font-size: 20px;
-	text-shadow: 2px 4px 6px #1162ac;
-	border: 2px inset grey;
-  padding: 8px;
+
+#container{
+  margin: 0 auto;
+  max-width: 960px;
 }
-#sticker{
-   width:400px;
-   height:15px;
-   border:3px solid brown;
-   border-radius:17px;
-   padding: 8px;
+
+#container header{
+  background: #DDD;
+  border-bottom: 1px solid; 
+}
+
+#container header h1{
+  font-size: 4em;
+  margin: 1em;
+}
+
+#container header p{
+  font-size: 2em;
+  margin: 1em;
+}
+
+#container #content{
+  background: #CCC;
+  padding: 10px; 
+}
+
+#container #content article{
+  background: #FFF;
+  border-bottom: 2px solid #CCC;
+}
+
+#container footer{
+  background: #CCC;
+}
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 650px){
+  #container header{
+    background: #DDD;
+    border-bottom: 1px solid; 
+    padding: 8px;
+    text-align: center;
+  }
+
+  #container header h1{
+    font-size: 4em;
+    margin: 1px;
+    color: red;
+
+  }
+
+#container header p{
+  color: blue;
+    font-size: 2em;
+    margin: 1em;
+  }
+
 }

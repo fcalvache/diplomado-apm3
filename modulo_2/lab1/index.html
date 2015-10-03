@@ -1,39 +1,41 @@
-<!doctype html>
- <html>
-
-   <head>
-      <meta charset="utf-8"/>  
-      <meta name="description" content="estructura basica de htm5"> 
-      <title>html5 ejercicio</title>
-      <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
-   </head>
-   <body>
-    <header><h1>ejercicio html5</h1>
-<h2>ejercicio 1</h2>
-      </header>
-      <nav id="sticker">
-		nav 1 (Quiénes somos)
-		nav 2 (Servicios)
-		nav 3 (Contacto)
-	</nav>
-	<div id="titulo">
-		Ejercicio de HTML5
-	</div>
-       <section id="contenido">
-         <article>
- 	      articulo 1
- 	    </article>
- 	    <article>
- 	      articulo 2
- 	    </article>
- 	    <article>
- 	      articulo 3
- 	    </article>
-      </section>
-
-      <footer>
-      	pie de pagina
-      </footer>
-   </body>
-
- </html>
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Test Responsive Web Design</title>
+</head>
+<body>
+  <section id="container">
+    <header>
+      <h1>Mi sitio de Películas</h1>
+      <p>Este es nuestro sitio de peliculas con Microformatos</p>
+    </header>
+    <section id="content">
+      <article>
+        <div itemscope itemtype="http://schema.org/Movie">
+          <h2 itemprop="name">Inception</h2>
+          <div itemprop="director" itemscope="http://schema.org/Person">
+            Director: <span itemprop="director">Christopher Nolan</span>
+          </div>
+          <span itemtprop="genre">Ciencia Ficción</span>
+          <a href="http://www.imdb.com/title/tt1375666/" itemprop="trailer">Trailer de la Película</a>
+        </div>
+      </article>
+      <article>
+        <h2>Texto</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </article>
+    </section>
+    <footer>
+      Creado en 2015 &copy;
+    </footer>
+  </section>
+</body>
+</html>
