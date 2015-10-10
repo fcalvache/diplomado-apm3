@@ -3,8 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="lab2.js"></script>
+
+	<script src="lab3.js"></script>
 </head>
 <body>
+<p id="demo"></p>
+
+<script>
+function person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+var myFather = new person("Hernan", "Salazar", 46, "verde");
+var myMother = new person("Amaparo", "Rally", 48, "green");
+
+document.getElementById("demo").innerHTML =
+"My father " + myFather.firstName + " tiene " + myFather.age + " años. My mother " + myMother.firstName + " tiene " + myMother.age + " años"; 
+</script>
+
 </body>
 </html>
