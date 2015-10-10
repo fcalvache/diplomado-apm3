@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -46,6 +48,11 @@ label{
 	cursor: pointer;
 	display: inline-block;
 	padding: 5px;
+	margin-top: 5px;
+}
+
+input{
+	display: none!important;
 }
 
 .nav-menu:checked + label{
@@ -55,8 +62,6 @@ label{
 	border-radius: 3px;
 	color: #FFF;
 }
-
-
 #all:checked ~ .services .all,
 #develop:checked ~ .services .develop,
 #languages:checked ~ .services .languages,
@@ -125,6 +130,20 @@ label{
 	transform: translateX(0);
 }
 
+@media screen and (max-width: 960px){
+
+}
+@media screen and (max-width: 720px){
+  .logo h1{
+    font-family: 'Oswald', sans-serif;
+    color: red;
+  }
+
+@media screen and (max-width: 480px){
+  .logo h1{
+    font-family: 'Poiret One', cursive;
+    color: yellow;
+  }
 /* End services */
 
 .footer{
