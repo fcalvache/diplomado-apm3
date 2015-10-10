@@ -4,8 +4,8 @@ var a,b;
 
 a = 54;
 b =54;
-a=prompt('numero A:',0);
-b=prompt('numero B:',0);
+a= parseInt(prompt('numero A:',0));
+b= parseInt(prompt('numero B:',0));
 
 var resuelva = function(a, b){
 	var res = 'Valores: ' + a + ' y ' + b +',';
