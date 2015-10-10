@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+<p id="ppal"></p>
+
+<script>
+for (i = 0; i < 10; i++) { 
+    document.getElementById('ppal').innerHTML+= i + "<br>";
+}
+
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+while (cars[i]) {
+    document.getElementById('ppal').innerHTML += cars[i] + "<br>";
+    i++;
+}
+</script>
+<script src="lab1.js"></script>
+</body>
+</html>
