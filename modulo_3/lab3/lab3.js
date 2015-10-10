@@ -39,12 +39,17 @@ function test(){
 }
 
 test();
-
+*/
 // usando funcion anonima
 
-var bye_bye = function(){
-	console.log('Que tengan una feliz semana santa');
+var bye_bye = function(Nombre){
+	console.log('Que tengan una feliz semana santa ' + Nombre);
 }
 
-bye_bye();
-*/
+bye_bye('Fabio');
+
+var tarea = function(){
+	console.log('LEEEEEERRR');
+}
+
+tarea();
