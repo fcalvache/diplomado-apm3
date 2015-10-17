@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="tech">
+<head>
+	<title>AngularJS</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="tech_controller">
+		<h1>Lenguajes</h1>
+        <ul>
+            <li ng-repeat="lang1 in languages1">{{ lang1.name }} {{ lang1.sigla }}</li>
+        </ul>
+        <h1>poderosos</h1>
+        <ul>
+            <li ng-repeat="lang1 in languages_names">{{ lang1 }}</li>
+        </ul>
+	</div>
+	
+	<script type="text/javascript">
+	angular.module('tech', [])
+	       .controller('tech_controller', ['$scope', function($scope){
+	       	$scope.languages_names = ["c++", "c#", "js"];
+            $scope.languages1 = [
+                {
+                    name: "lenguaje maquina:",
+                    sigla: "Asembler"
+                },
+                {
+                    name: "lenguaje .Net:",
+                    sigla: "c#"
+                },
+                {
+                    name: "lenguaje bases de datos: ",
+                    sigla: "SQL"
+                },
+                {
+                    name: "lenguaje viejo: ",
+                    sigla: "Cobol"
+                },
+                {
+                    name: "lenguaje pionero: ",
+                    sigla: "Pascal"
+                },
+                {
+                    name: "Lenguaje web: ",
+                    sigla: "javascript"
+                }
+            ];
+	       }])
+		
+	</script>
+</body>
+</html>
