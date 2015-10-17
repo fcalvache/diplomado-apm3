@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="tech">
 <head>
-	<title>AngularJS</title>
+	<title>Repeat</title>
 	<meta charset="utf-8" />
 	<script type="text/javascript" src="../assets/angular.min.js"></script>
 </head>
@@ -9,7 +9,7 @@
 	<div ng-controller="tech_controller">
 		<h1>Lenguajes</h1>
         <ul>
-            <li ng-repeat="lang1 in languages1">{{ lang1.name }} {{ lang1.sigla }}</li>
+            <li ng-repeat="lang1 in languages1">{{ lang1.name }} {{ lang1.initials }}</li>
         </ul>
         <h1>poderosos</h1>
         <ul>
@@ -24,27 +24,27 @@
             $scope.languages1 = [
                 {
                     name: "lenguaje maquina:",
-                    sigla: "Asembler"
+                    initials: "Asembler"
                 },
                 {
                     name: "lenguaje .Net:",
-                    sigla: "c#"
+                    initials: "c#"
                 },
                 {
                     name: "lenguaje bases de datos: ",
-                    sigla: "SQL"
+                    initials: "SQL"
                 },
                 {
                     name: "lenguaje viejo: ",
-                    sigla: "Cobol"
+                    initials: "Cobol"
                 },
                 {
                     name: "lenguaje pionero: ",
-                    sigla: "Pascal"
+                    initials: "Pascal"
                 },
                 {
                     name: "Lenguaje web: ",
-                    sigla: "javascript"
+                    initials: "javascript"
                 }
             ];
 	       }])
