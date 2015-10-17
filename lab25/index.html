@@ -24,20 +24,15 @@
             */
             $routeProvider
 
-            .when('/hello', {
-                templateUrl : "hello.html"
+            .when('/about', {
+                templateUrl : "about.html"
             })
             
-            .when('/message/one', 
+            .when('/contact', 
                 {
-                    templateUrl: "message1.html"
+                    templateUrl: "contact.html"
                 })
             
-            .when('/message/two', 
-                {
-                    templateUrl: "message2.html"
-                })
-
             .otherwise({
                 redirectTo: '/',
                 templateUrl: 'otherwise.html'
