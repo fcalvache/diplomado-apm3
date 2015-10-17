@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="lab14">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="controllerlab14">
+		<div ng-show="revealDiv">
+			<p>askldjfadsklfjadsf adsklf adskl adfskladsfklads fkladsj fl alkjkladsfjlads adfsl asdklfja klsdf</p>
+		    <button ng-click="OcultarPButton()" ng-show="OcultarPButton">Ocultar parrafo</button>
+		</div>
+
+		<button ng-click="controlButton()" ng-show="revealButton">Ocultar button</button>
+	</div>
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+
+	<script type="text/javascript">
+
+	angular.module('lab14', [])
+		   .controller('controllerlab14', function($scope){
+		   		$scope.revealDiv = false;
+		   		$scope.revealButton = true;
+
+		   		$scope.OcultarPButton = function(){
+		   			$scope.revealDiv = false;
+		   			$scope.OcultarPButton = false;
+		   		};
+
+		   		$scope.controlButton = function(){
+		   			$scope.revealDiv = true;
+		   			$scope.revealButton = false;
+		   		};
+
+		   });
+	</script>
+</body>
+</html>
