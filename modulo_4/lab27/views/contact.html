@@ -1,0 +1,38 @@
+<p>Contactos</p>
+
+<table>
+   <tr>
+      <th>Name</th>
+      <th>Phone</th>
+	   <th>Company</th>
+   </tr>
+   <tr ng-repeat="contact in contacts">
+      <td>{{ contact.Name }}</td>
+      <td>{{ contact.Phone }}</td>
+	   <td>{{ contact.Company }}</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Name</td>
+      <td>
+         <input type="text" id="name" ng-model="name" placeholder="Name" />
+      </td>
+   </tr>
+   <tr>
+      <td>Phone</td>
+      <td>
+         <input type="number" id="phone" ng-model="phone" placeholder="Phone" />
+      </td>
+   </tr>
+     <tr>
+      <td>Company</td>
+      <td>
+         <input type="text" id="company" ng-model="company" placeholder="Company" />
+      </td>
+   </tr>
+   <tr>
+      <td colspan="2"><button class="button" ng-click="submit()">Append Localstorage</button>
+      </td>
+   </tr>
+</table>
