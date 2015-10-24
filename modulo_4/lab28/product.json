@@ -1,0 +1,23 @@
+
+[
+	{
+	"serial" : "VC21232-89",
+	"description" : "Levis's 511",
+	"value" : 130
+	},
+	{
+	"serial" : "DX33234-66",
+	"description" : "Levis's 505",
+	"value" : 135
+	},
+	{
+	"serial" : "AX87123-44",
+	"description" : "Levis's 513",
+	"value" : 120
+	},
+	{
+	"serial" : "WC52345-31",
+	"description" : "Levis's 511 Women",
+	"value" : 150
+	}
+]

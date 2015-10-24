@@ -1,0 +1,13 @@
+<p>Productos del mercado</p>
+<table>
+   <tr>
+      <th>Referencia</th>
+      <th>Descripción</th>
+	  <th>Valor</th>
+   </tr>
+   <tr ng-repeat="product in products">
+      <td>{{ product.serial }}</td>
+      <td>{{ product.description }}</td>
+	  <td>{{ product.value }}</td>
+   </tr>
+</table>
