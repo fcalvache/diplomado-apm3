@@ -24,3 +24,6 @@ gulp.task('concat-files', function(){
         .pipe(uglify())
         .pipe(gulp.dest('build/'))
 });
+
+gulp.task('all', ['concat-css', 'minify-css', 'concat-files'], function(){});
+
