@@ -1,0 +1,24 @@
+{
+  "name": "lab9",
+  "version": "0.1.0",
+  "description": "ejercicio 30 octubre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcalvache/diplomado-apm3.git"
+  },
+  "author": "Fabio Calvache",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fcalvache/diplomado-apm3/issues"
+  },
+  "homepage": "https://github.com/fcalvache/diplomado-apm3#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7"
+  }
+}
