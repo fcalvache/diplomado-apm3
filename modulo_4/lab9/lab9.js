@@ -1,4 +1,4 @@
-var socket = io.connect('http://127.0.0.1:8585');
+var socket = io.connect('http://127.0.0.1:8585');  //se especifica el nombre ip del servidor
 
 // En conexión con el servidor, pregunta el respectivo nombre de usuario y una devolución anonima del llamado
 socket.on('connect', function(){
