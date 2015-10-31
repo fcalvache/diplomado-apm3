@@ -27,3 +27,11 @@ gulp.task('concat-files', function(){
 
 gulp.task('all', ['concat-css', 'minify-css', 'concat-files'], function(){});
 
+
+var htmlmin = require('gulp-htmlmin');
+ 
+gulp.task('minifyhtml', function() {
+  return gulp.src('test.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('disthtml'))
+});
