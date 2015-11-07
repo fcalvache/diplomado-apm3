@@ -1,0 +1,1 @@
+angular.module("lab1c",[]).controller("lab1cController",["$scope",function(a){a.link_image="http://dummyimage.com/200x200/000/34ffddaa",a.changeLinkImage=function(n){a.link_image=n}}]);
