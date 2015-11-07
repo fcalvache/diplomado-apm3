@@ -1,0 +1,27 @@
+{
+  "name": "lab2",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Fabio Calvache"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "ngCordova": "~0.1.20-alpha"
+  }
+}
