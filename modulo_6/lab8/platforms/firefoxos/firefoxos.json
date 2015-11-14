@@ -1,0 +1,53 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"firefoxos-package\" value=\"Accelerometer\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.app.lab8"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.app.lab8"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+            "id": "cordova-plugin-device-motion.Acceleration",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "Acceleration"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+            "id": "cordova-plugin-device-motion.accelerometer",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "navigator.accelerometer"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device-motion/src/firefoxos/accelerometer.js",
+            "id": "cordova-plugin-device-motion.accelerometer-impl",
+            "pluginId": "cordova-plugin-device-motion",
+            "runs": true
+        }
+    ]
+}

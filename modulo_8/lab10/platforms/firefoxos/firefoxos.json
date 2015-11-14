@@ -1,0 +1,79 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"firefoxos-package\" value=\"Accelerometer\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.app.lab10"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.app.lab10"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.app.lab10"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+            "id": "cordova-plugin-device-motion.Acceleration",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "Acceleration"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+            "id": "cordova-plugin-device-motion.accelerometer",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "navigator.accelerometer"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device-motion/src/firefoxos/accelerometer.js",
+            "id": "cordova-plugin-device-motion.accelerometer-impl",
+            "pluginId": "cordova-plugin-device-motion",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/network.js",
+            "id": "cordova-plugin-network-information.network",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
+            "id": "cordova-plugin-network-information.Connection",
+            "pluginId": "cordova-plugin-network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-network-information/src/firefoxos/NetworkProxy.js",
+            "id": "cordova-plugin-network-information.NetworkProxy",
+            "pluginId": "cordova-plugin-network-information",
+            "runs": true
+        }
+    ]
+}
