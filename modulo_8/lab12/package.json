@@ -1,13 +1,13 @@
 {
-  "name": "lab11",
+  "name": "lab12",
   "version": "0.1.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fabio Calvache",
   "license": "MIT",
-  "description": "",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",

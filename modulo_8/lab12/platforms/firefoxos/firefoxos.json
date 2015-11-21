@@ -1,0 +1,74 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"firefoxos-package\" value=\"Accelerometer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"firefoxos-package\" value=\"Notification\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.app.lab12"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.app.lab12"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.app.lab12"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-device-motion/www/Acceleration.js",
+            "id": "cordova-plugin-device-motion.Acceleration",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "Acceleration"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device-motion/www/accelerometer.js",
+            "id": "cordova-plugin-device-motion.accelerometer",
+            "pluginId": "cordova-plugin-device-motion",
+            "clobbers": [
+                "navigator.accelerometer"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device-motion/src/firefoxos/accelerometer.js",
+            "id": "cordova-plugin-device-motion.accelerometer-impl",
+            "pluginId": "cordova-plugin-device-motion",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+            "id": "cordova-plugin-dialogs.notification",
+            "pluginId": "cordova-plugin-dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-dialogs/src/firefoxos/notification.js",
+            "id": "cordova-plugin-dialogs.dialogs-impl",
+            "pluginId": "cordova-plugin-dialogs",
+            "runs": true
+        }
+    ]
+}
