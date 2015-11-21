@@ -1,0 +1,27 @@
+{
+  "name": "lab16",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Fabio Calvache"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngCordova": "~0.1.23-alpha"
+  }
+}
