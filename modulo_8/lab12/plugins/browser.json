@@ -15,6 +15,9 @@
         },
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.app.lab12"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.app.lab12"
         }
     },
     "dependent_plugins": {}

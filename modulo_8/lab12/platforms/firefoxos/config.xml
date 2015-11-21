@@ -10,6 +10,9 @@
     <feature name="Notification">
         <param name="firefoxos-package" value="Notification" />
     </feature>
+    <feature name="Camera">
+        <param name="firefoxos-package" value="Camera" />
+    </feature>
     <name>“lab12”</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
